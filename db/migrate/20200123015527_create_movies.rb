@@ -1,11 +1,11 @@
 class CreateMovies < ActiveRecord::Migration[5.2]
   def change
-    create_table :movies do |s|
-      s.string :title
-      s.integer :release_date
-      s.string :director
-      s.string :lead
-      s.boolean :in_theaters
+    create_table :movies do |t|
+      t.string :title
+      t.integer :release_date
+      t.string :director
+      t.string :lead
+      t.boolean :in_theaters
     end
   end
 end
